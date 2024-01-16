@@ -1,0 +1,13 @@
+# file options
+--swiftversion 5.3 # this is used to specify the swift version so that the rules behave acordingly for that version of swift
+
+# rules
+# https://github.com/nicklockwood/SwiftFormat/blob/master/Rules.md#andOperator
+--enable andOperator,anyObjectProtocol,blankLinesAtEndOfScope,blankLinesAtStartOfScope,blankLinesBetweenScopes,braces,consecutiveBlankLines,consecutiveSpaces,duplicateImports,elseOnSameLine,emptyBraces,enumNamespaces,extensionAccessControl,indent,initCoderUnavailable,isEmpty,leadingDelimiters,linebreaks,organizeDeclarations,redundantBackticks,redundantExtensionACL,redundantFileprivate,redundantGet,redundantInit,redundantLet,redundantLetError,redundantNilInit,redundantObjc,redundantParens,redundantPattern,redundantSelf,semicolons,sortedImports,sortedSwitchCases,spaceAroundBraces,spaceAroundBrackets,spaceAroundComments,spaceAroundGenerics,spaceAroundOperators,spaceInsideBraces,spaceInsideBrackets,spaceInsideGenerics,spaceInsideParens,strongifiedSelf,todos,trailingSpace,typeSugar,unusedArguments,void,wrapArguments,wrapAttributes,wrapEnumCases,wrapSwitchCases,yodaConditions
+--disable blankLinesAroundMark,fileHeader,linebreakAtEndOfFile,preferKeyPath,redundantBreak,redundantReturn,redundantType,redundantVoidReturnType,spaceAroundParens,spaceInsideComments,strongOutlets,trailingClosures,wrap,wrapMultilineStatementBraces,modifierOrder,hoistPatternLet,numberFormatting,redundantRawValues,trailingCommas,markTypes
+
+# format options
+--wrapparameters after-first # 函數參數列表如果太長，在第一個參數後換行
+--funcattributes prev-line # 函數屬性應該放在前一行
+--typeattributes prev-line # 類型屬性應該放在前一行
+--exclude Pods # 排除 Pods 目錄下的文件，不進行格式化
